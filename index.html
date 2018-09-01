@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Sony</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<section class="feedback">
+		<form class="feedback__form" action="" method="post" enctype="miltipart/form-data">
+			<legend class="feedback__title">
+				Заполните форму на консультацию или вызов курьера и мы свяжемся с Вами в ближайшее время.
+			</legend>
+			<label>
+				<input class="feedback__input" type="text" name="name" placeholder="Ваши ФИО">
+			</label>
+			<label>
+				<input class="feedback__input" type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Контактный телефон">
+			</label>
+			<label>
+				<input class="feedback__input" type="text" name="model" placeholder="Укажите модель и опишите проблему">
+			</label>
+			<label>
+				<input class="feedback__input" type="text" name="addres" placeholder="По какому адресу забирать устройство?">
+			</label>
+			<label>
+				<input class="feedback__input" type="text" placeholder="Защита от роботов">
+			</label>
+			<div class="feedback__inner">
+				<label>
+					<input class="feedback__chechbox" type="checkbox" checked>
+					<span class="feedback__icon"></span>
+				</label>
+				<p class="feedback__text">На обработку <a class="feedback__link" href="#">персональных данных</a> согласен.</p>
+				<a class="feedback__submit" href="#">Отправить</a>
+			</div>
+		</form>
+		<img class="feedback__img" src="img/sony-form.jpg" width="501" height="282" alt="Картинка">
+	</section>	
+</body>
+</html>

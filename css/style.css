@@ -1,0 +1,169 @@
+@font-face {
+  font-family: "Open Sans";
+    src: url(../font/opensans.woff2) format("woff2"),
+        url(../font/opensans.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+body {
+	margin: 0px;
+  padding: 0px;
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 16px;
+}
+@media screen and (min-width: 320px) and (max-width: 920px) {
+@media (min-width: 320px) {
+  .feedback {
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (min-width: 890px) {
+  .feedback {
+    position: relative;
+    padding-left: 33px;
+    padding-right: 42px;
+    padding-top: 40px;
+  }
+}
+.feedback__form {
+  display: flex;
+  flex-direction: column;
+}
+.feedback__title {
+	max-width: 520px;
+	font-size: 20px;
+}
+.feedback__input {
+  max-width: 520px;
+  margin: 5px 0;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 26px;
+  width: 100%;
+  outline: none;
+  background-color: hsla(0,0%,100%,-0.7);
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+@media (min-width: 320px){
+  .feedback__title {
+    font-size: 18px;
+  }
+  .feedback__input {
+    font-size: 12px;
+  }
+}
+@media (min-width: 640px){
+  .feedback__title {
+    font-size: 20px;
+  }
+  .feedback__input {
+    font-size: 16px;
+  }
+}
+.feedback__inner {
+  display: flex;
+}
+.feedback__chechbox[type="checkbox"] {
+  display: none;
+}
+.feedback__text {
+  margin: 0px;
+  padding: 0px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 5px;
+  font-size: 16px;
+}
+.feedback__link {
+  color: rgb(207, 196, 245);
+  font-size: 16px;
+  font-style: italic;
+  text-decoration: none;
+  border-bottom: 1px solid rgb(207, 196, 245);
+}
+@media (min-width: 320px) {
+  .feedback__inner {
+    display: flex;
+    flex-direction: column;
+  }
+  .feedback__text {
+    font-size: 12px;
+  }
+  .feedback__link {
+    font-size: 12px;
+  }
+  .feedback__submit {
+    margin-top: 20px;
+  }
+  .feedback__img {
+    display: none;
+  }
+}
+@media (min-width: 640px) {
+  .feedback__inner {
+    display: flex;
+    flex-direction: row;
+  }
+  .feedback__text {
+    font-size: 16px;
+  }
+  .feedback__link {
+    font-size: 16px;
+  }
+  .feedback__submit {
+    margin-top: 0px;
+  }
+}
+.feedback__icon {
+  position: relative;
+}
+.feedback__icon::before {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  left: 0px;
+  top: 10px;
+  border: 1px solid rgb(134, 108, 229);
+}
+.feedback__icon::after {
+  display: none;
+  position: absolute;
+  content: "";
+  left: -2px;
+  top: 4px;
+  width: 32px;
+  height: 24px; 
+  background-image: url(../img/icon-tick.svg);
+  background-repeat: no-repeat;
+}
+input:checked ~ .feedback__icon::after {
+  display: block;
+}
+.feedback__submit {
+  width: 135px;
+  height: 35px;
+  display: block;
+  font-size: 16px;
+  line-height: 35px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: rgb(134, 108, 229);
+  border-radius: 10px;
+}
+@media (min-width: 890px) {
+  .feedback__img {
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 42px;
+    z-index: -1;
+  }
+}
+}
